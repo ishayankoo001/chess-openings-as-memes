@@ -1,0 +1,14 @@
+{
+  "raw_games": 92193352,
+  "kept_games": 43881270,
+  "drop_counts": {
+    "not_rated_blitz": 48002902,
+    "variant_not_standard": 0,
+    "bot_title": 70624,
+    "elo_missing_or_bad": 0,
+    "termination_bad": 466748,
+    "eco_opening_missing": 329687
+  },
+  "wall_seconds": 939.31,
+  "games_per_second": 98149.59
+}

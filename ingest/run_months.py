@@ -9,10 +9,24 @@ import sys
 from pathlib import Path
 
 
-# Edit this list before running. Start with one month, then expand.
-MONTHS = [
-    "2023-01",
-]
+def month_range(start: str, end: str) -> list[str]:
+    """Return inclusive YYYY-MM months from start through end."""
+    start_year, start_month = map(int, start.split("-"))
+    end_year, end_month = map(int, end.split("-"))
+
+    months: list[str] = []
+    year = start_year
+    month = start_month
+    while (year, month) <= (end_year, end_month):
+        months.append(f"{year:04d}-{month:02d}")
+        month += 1
+        if month == 13:
+            year += 1
+            month = 1
+    return months
+
+
+MONTHS = month_range("2019-01", "2019-12") + month_range("2020-07", "2021-12")
 
 
 ROOT = Path(__file__).resolve().parents[1]

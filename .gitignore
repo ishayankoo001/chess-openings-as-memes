@@ -3,6 +3,3 @@ __pycache__/
 *.pyc
 
 data/raw/
-data/agg/*.csv
-data/agg/*.json
-data/agg/run_log.txt

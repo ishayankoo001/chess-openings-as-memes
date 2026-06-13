@@ -38,6 +38,7 @@ Optional (only if everything else is done): k-means (k=3) on the feature matrix 
 
 REPORTING RULES
 n ≈ 10⁸ ⇒ everything is "statistically significant" — lead with EFFECT SIZES (fold-change with CI, odds ratios, Cramér's V where chi-squared is used); p-values are a footnote. Every figure: large fonts, one message per slide.
+FIGURES: every plotting cell starts with `import plot_theme` (auto-applies the house style) and uses the semantic palette — PALETTE['trap'] for the viral/Stafford series, PALETTE['control'] for Queen's Gambit/baseline, colors_for(k) for k-means clusters. Save with save_fig('name'). Never set colors by hex or restyle rcParams; the theme owns all styling. Keep the SAME opening the SAME colour across H1/H2/H4.
 
 CUT — do not reintroduce under any circumstances
 Bongcloud as an H1 or H2 case (no pre-2021 labels in the dumps — H4 only); rating-bin lead-lag as a formal hypothesis (the low-bin-leads signal is visible in raw Stafford counts and belongs on a backup slide only; Q&A answer = a clean test would require splitting new vs pre-existing accounts); name-memability feature; Google Trends regressor (future-work mention only); sentiment analysis; engine evaluations (future-work mention: depth-30 minus depth-5 eval gap as a better trickiness metric); network analysis.

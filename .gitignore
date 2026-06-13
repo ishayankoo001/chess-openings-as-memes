@@ -1,6 +1,6 @@
 venv/
 __pycache__/
 *.pyc
-
+data/chess.sqlite
 data/raw/
 .DS_Store
